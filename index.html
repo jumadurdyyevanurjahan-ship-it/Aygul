@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkmaniston Sayohatlari | Turizm Portali</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Sarlavha va Navigatsiya */
+        header {
+            background: linear-gradient(135deg, #007A3D, #004d26);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f1c40f;
+        }
+        /* Asosiy Banner */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://unsplash.com') center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+        .btn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #d35400;
+        }
+        /* Bo'limlar */
+        section {
+            padding: 60px 8%;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #007A3D;
+        }
+        /* Kartochkalar */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img {
+            height: 180px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .price {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #007A3D;
+            font-size: 1.1rem;
+        }
+        /* Buyurtma formasi */
+        .booking-box {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        footer {
+            background-color: #1e272e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Turkmaniston Tur</h1>
+        <nav>
+            <a href="#joylar">Diqqatga sazovor joylar</a>
+            <a href="#paketlar">Tur paketlar</a>
+            <a href="#buyurtma">Band qilish</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Sirli Turkmanistonni Kashf Eting</h2>
+        <p>Qadimiy Ipak yo‘li merosi, oq marmarli Ashxobod va Qoraqum sahrosining mo‘jizalariga unutilmas sayohat.</p>
+        <a href="#buyurtma" class="btn">Sayohatni Band Qilish</a>
+    </div>
+
+    <section id="joylar">
+        <h2 class="section-title">Mashhur Sayohat Maskani</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img" style="background-color: #d35400;"></div>
+                <div class="card-body">
+                    <h3>Darvoza Gaz Krateri</h3>
+                    <p>Qoraqum sahrosi markazida joylashgan va 50 yildan beri tinimsiz yonib turuvchi noyob "Jahannam darvozasi".</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-color: #27ae60;"></div>
+                <div class="card-body">
+                    <h3>Ashxobod Shahri</h3>
+                    <p>Oq marmar binolari bilan Ginnesning rekordlar kitobiga kirgan zamonaviy va go‘zal poytaxt shahar.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-color: #2980b9;"></div>
+                <div class="card-body">
+                    <h3>Avaza Kurort Zonasi</h3>
+                    <p>Kaspiy dengizi sohilidagi zamonaviy mehmonxonalar, plyajlar va dam olish maskanlari majmuasi.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-color: #8e44ad;"></div>
+                <div class="card-body">
+                    <h3>Ko‘hna Urganch va Marv</h3>
+                    <p>YUNESKO ro‘yxatiga kiritilgan qadimiy tarixiy yodgorliklar va me’moriy obidalar majmuasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paketlar" style="background-color: #eaf2f0;">
+        <h2 class="section-title">Sayohat Paketlari</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Qisqa Ekspress Tur (3 kun)</h3>
+                    <p>Ashxobod shahri bo‘ylab ekskursiya va Darvoza krateriga tungi sayohat.</p>
+                    <span class="price">$350 / kishi boshiga</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Tarixiy Meros Turi (5 kun)</h3>
+                    <p>Ashxobod, Niso, Qadimiy Marv va Ko‘hna Urganch obidalariga to‘liq sayohat.</p>
+                    <span class="price">$580 / kishi boshiga</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>VIP Kaspiy va Sahro (7 kun)</h3>
+                    <p>Barcha tarixiy joylar + Avaza kurortida 3 kunlik oilaviy dam olish.</p>
+                    <span class="price">$890 / kishi boshiga</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="buyurtma">
+        <h2 class="section-title">Sayohatni Band Qilish</h2>
+        <div class="booking-box">
+            <form id="tourForm">
+                <div class="form-group">
+                    <label>Ism va Familiyangiz</label>
+                    <input type="text" id="name" placeholder="Masalan: Sardor Karimov" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefon raqamingiz</label>
+                    <input type="tel" id="phone" placeholder="+998 90 123 45 67" required>
+                </div>
+                <div class="form-group">
+                    <label>Sayohat paketini tanlang</label>
+                    <select id="package">
+                        <option value="Qisqa Ekspress Tur ($350)">Qisqa Ekspress Tur ($350)</option>
+                        <option value="Tarixiy Meros Turi ($580)">Tarixiy Meros Turi ($580)</option>
+                        <option value="VIP Kaspiy va Sahro ($890)">VIP Kaspiy va Sahro ($890)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Sayohat sanasi</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Ariza Yuborish</button>
+            </form>
+            <p id="statusMsg" style="margin-top: 15px; text-align: center; font-weight: bold; color: #007A3D;"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Turkmaniston Turizm Portali. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script>
+        document.getElementById('tourForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const pkg = document.getElementById('package').value;
+            const date = document.getElementById('date').value;
+            
+            document.getElementById('statusMsg').innerText = 
+                `Rahmat, ${name}! Sizning "${pkg}" paketi bo‘yicha ${date} sanasiga arizangiz qabul qilindi.`;
